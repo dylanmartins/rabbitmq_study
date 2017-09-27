@@ -1,3 +1,14 @@
 sudo apt-get install rabbitmq-server
 sudo rabbitmqctl list_queues
 
+We're done. If you want to save logs to a file, just open a console and type:
+
+python receive_logs.py > logs_from_rabbit.log
+If you wish to see the logs on your screen, spawn a new terminal and run:
+
+python receive_logs.py
+And of course, to emit logs type:
+
+python emit_log.py
+
+rabbitmqctl list_bindings
